@@ -16,7 +16,7 @@ public class CowFloat : MonoBehaviour
     public float speed;
 
     public Vector3[] positions;
-
+    
     private int index;
 
     public CowState currState = CowState.Graze;
@@ -46,11 +46,7 @@ public class CowFloat : MonoBehaviour
                 Fly();
                 break;
         }
-        
-        //if (HitByRay() && currState != CowState.Captured )
-        //{
-            //currState = CowState.Fly;
-        //}
+                
     }
 
 
