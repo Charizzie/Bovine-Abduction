@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Michael/Scenes/Menu.unity
     guid: c29f4e162ac0dda4ba829a9e699c5c0c
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Liz/Scene/Code Testing.unity
+    guid: 831f4d445dc5b2347b1a26edeae35bfb
+  - enabled: 1
+    path: Assets/Michael/Scenes/How To Play.unity
+    guid: 9909a3b2486fb2541aaaa2d7a3915f1a
   m_configObjects: {}
