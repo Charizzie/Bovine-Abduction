@@ -21,14 +21,14 @@ public class Abduction : MonoBehaviour
             RaycastHit hit;
             Ray beam = new Ray(transform.position, Vector3.down);
             
-            Debug.DrawRay(player.transform.position, -transform.up * 10, Color.green);
+            Debug.DrawRay(player.transform.position, -transform.up * 10, Color.green,2f);
                        
             //spherecast 
-            if (Physics.SphereCast(beam, 5, out hit, 10, mask))
+            if (Physics.SphereCast(beam, 5, out hit, 100,mask))
             {
                 hit.transform.SendMessage("HitByRay");
                 //hit.collider.gameObject.GetComponent<CowFloat>().Fly();
-                Debug.Log(hit.transform.name);
+                Debug.Log(hit.collider.gameObject.name);
             }
         }
 
