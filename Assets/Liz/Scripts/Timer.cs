@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 30;
+    public float timeRemaining = 5;
     public Text timeText;
 
     // Start is called before the first frame update
@@ -19,5 +20,10 @@ public class Timer : MonoBehaviour
     {
         timeRemaining -= Time.deltaTime;
         timeText.text = " " + (int)timeRemaining;
+
+        if (timeRemaining <= 0)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }
