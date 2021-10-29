@@ -68,7 +68,7 @@ public class CowFloat : MonoBehaviour
 
     void Graze()
     {
-        if (transform.position == positions[index])
+       /* if (transform.position == positions[index])
         {
             if (index == positions.Length - 1)
             {
@@ -78,7 +78,7 @@ public class CowFloat : MonoBehaviour
             {
                 index++;
             }
-        }
+        }*/
     }
     
     void Run()
